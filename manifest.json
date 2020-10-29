@@ -8,5 +8,11 @@
   "browser_action": {
     "default_popup": "index.html"
   },
-  "permissions": ["tabs"]
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-3.5.1.min.js", "extension.js"]
+    }
+  ]
 }
