@@ -45,6 +45,6 @@ $("form").submit(function (event) {
     // save to localStorage
     localStorage.setItem(MY_KEY, JSON.stringify(dataJson))
     // post to server
-    $("body").append(JSON.stringify(dataJson));
+    //$("body").append(JSON.stringify(dataJson));
 
 });
